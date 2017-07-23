@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-mw-test-plugin-activator.php
  */
-function activate_mw_test_plugin() {
+function activate_mw_details_form() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mw-details-form-activator.php';
 	Mw_Details_Form_Activator::activate();
 }
@@ -43,13 +43,13 @@ function activate_mw_test_plugin() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-mw-test-plugin-deactivator.php
  */
-function deactivate_mw_test_plugin() {
+function deactivate_mw_details_form() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mw-details-form-deactivator.php';
 	Mw_Details_Form_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_mw-details-form' );
-register_deactivation_hook( __FILE__, 'deactivate_mw-details-form' );
+register_activation_hook( __FILE__, 'activate_mw_details_form' );
+register_deactivation_hook( __FILE__, 'deactivate_mw_details_form' );
 
 /**
  * The core plugin class that is used to define internationalization,

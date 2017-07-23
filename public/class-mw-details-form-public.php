@@ -76,10 +76,6 @@ class Mw_Details_Form_Public {
 
 	}
 
-    public function mw_profile_update($user_id, $old_user_data) {
-        echo $user_id;
-    }
-
     public function mw_details_form_update(){
 
         function mw_shortcode($atts, $content, $submit = null){
