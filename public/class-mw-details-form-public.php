@@ -110,7 +110,7 @@ class Mw_Details_Form_Public {
                 $string = ob_get_clean();
 
             } else {
-                $string = 'Access Denied';
+                $string = '';
             }
 
             return $string;
