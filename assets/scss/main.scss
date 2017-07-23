@@ -1,0 +1,29 @@
+//SASS DECLARATION
+@charset 'UTF-8';
+
+// UTILITIES
+@import "./assets/scss/utility/colors.scss";
+@import "./assets/scss/utility/settings.scss";
+@import "./assets/scss/utility/fonts.scss";
+@import "./assets/scss/utility/mixins.scss";
+//@import "./assets/scss/utility/foundation-settings.scss";
+@import "./assets/scss/font-awesome/font-awesome";
+@import "./vendor/zurb/foundation/scss/foundation.scss";
+//@import "./assets/scss/utility/grid.scss";
+//@import "./resources/assets/scss/utility/mixin.scss";
+//@import "./resources/assets/scss/utility/animations.scss";
+
+// ATOMS
+@import "./assets/scss/atom/button.scss";
+@import "./assets/scss/atom/input.scss";
+@import "./assets/scss/atom/select.scss";
+
+// MOLECULES
+@import "./assets/scss/molecule/details-form.scss";
+
+// ORGANISMS
+//@import "./assets/scss/organism/header.scss";
+//@import "./assets/scss/organism/footer.scss";
+
+// TEMPLATES
+//@import "./assets/scss/template/home.scss";

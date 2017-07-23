@@ -1,0 +1,180 @@
+//DETAILS FORM
+
+.details-form {
+
+    color: $main-text;
+
+    font: {
+        family:'Roboto', sans-serif;
+        @include fontSize(15px);
+        weight: 300;
+    }
+
+    .details-form__success {
+        background:$success-background;
+        border: 1px solid $success-border;
+        display:block;
+        padding:10px 20px 10px 20px;
+        border-radius:4px;
+        margin-bottom:20px;
+
+        p {
+            margin:0;
+            padding:0;
+            color:$success-text;
+            font: {
+                @include fontSize(15px);
+                weight: 300;
+            }
+        }
+    }
+
+    .details-form__errors {
+
+        color:$errors-text;
+        background:$errors-background;
+        border: 1px solid $errors-border;
+        border-radius: 4px;
+        padding:10px 20px 10px 20px;
+        margin: 0 0 20px 0;
+        font: {
+            family:'Roboto', sans-serif;
+            @include fontSize(15px);
+            weight: 300;
+        }
+
+        ul {
+            margin:0 0 0 20px;
+            font: {
+                @include fontSize(15px);
+            }
+        }
+
+        h2 {
+            font: {
+                family:'Roboto', sans-serif;
+                @include fontSize(18px);
+                weight: 400;
+            }
+            margin:0px;
+            color: $errors-text;
+        }
+    }
+
+    .details-form__fields {
+
+        border:0px;
+        margin:0px;
+        padding:0px;
+
+        ul {
+            list-style: none;
+        }
+
+        label {
+            color:$main-text;
+            font: {
+                @include fontSize(15px);
+                weight: 300;
+            }
+        }
+
+        .details-form__fields--input {
+            margin-bottom:20px;
+
+            input[type="text"]::-webkit-input-placeholder {
+                color:$input-text;
+            }
+
+            input[type="text"]:-moz-placeholder {
+                color:$input-text;
+                opacity:  1;
+            }
+
+            input[type="text"]::-moz-placeholder {
+                color:$input-text;
+                opacity:  1;
+            }
+
+            input[type="text"]:-ms-input-placeholder {
+                color:$input-text;
+            }
+
+            input[type="text"]::-ms-input-placeholder {
+                color:$input-text;
+            }
+
+            input[type="text"] {
+                border-radius: 4px;
+                font-size:15px;
+                padding:20px;
+                margin: 0px;
+            }
+
+            input[type="text"]:focus {
+                background-color: #f2f9fa;
+                border: 1px solid #0d93aa;
+            }
+        }
+
+        .details-form__fields--readonly {
+            input[type="text"] {
+                background:$input-readonly-background;
+                color:$input-text;
+                border: 1px solid $input-readonly-border;
+            }
+        }
+
+        .details-form__fields--half-left {
+            width:48%;
+            float:left;
+            margin-right:2%;
+        }
+
+        .details-form__fields--half-right {
+            width:48%;
+            float:left;
+            margin-left:2%;
+        }
+
+        .details-form__fields--optional {
+            span {
+                float:right;
+            }
+        }
+
+        .details-form__fields--select {
+            margin-bottom:20px;
+            width:50%;
+
+            select {
+                width:100%;
+                border-radius: 4px;
+                padding: 0 0.6em 0 0.6em;
+                font: {
+                    @include fontSize(15px);
+                    weight: 300;
+                }
+            }
+
+            select:focus {
+                background-color: #f2f9fa;
+                border: 1px solid #0d93aa;
+            }
+
+        }
+
+        .details-form__fields--submit {
+
+        }
+    }
+}
+
+
+
+@media #{$medium-up} {
+    .details-form {
+
+
+    }
+}

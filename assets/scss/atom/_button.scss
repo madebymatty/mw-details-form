@@ -1,0 +1,35 @@
+//BUTTON
+.btn {
+    background: $default-btn-background;
+    background: $default-btn-background-rgba;
+    color: $default-btn-font;
+
+    font: {
+        @include fontSize(16px);
+        weight: 400;
+        family: 'Roboto', sans-serif;
+    }
+
+    border:0px;
+    border-radius: 4px;
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+
+    &:hover{
+        transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+        background: $default-btn-background-alt;
+        color: $default-btn-font;
+        border:0px;
+    }
+}
+
+.btn--submit:hover {
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+    background: $default-btn-background-alt;
+    color: $default-btn-font;
+    border:0px;
+}
+
+@media #{$medium-up} {
+    .btn {
+    }
+}

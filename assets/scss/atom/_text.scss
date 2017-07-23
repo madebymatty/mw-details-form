@@ -1,0 +1,12 @@
+//TEXT
+
+p {
+  font: {
+    @include fontSize(15px);
+    family: Helvetica, Arial, sans-serif;
+    weight: 300;
+  }
+  color:#0c332f;
+  line-height: 36px;
+  text-align:left;
+}

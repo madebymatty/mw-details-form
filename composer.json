@@ -1,0 +1,6 @@
+{
+  "name": "MadeByMatty",
+  "require": {
+    "zurb/foundation": "5.5.*"
+  }
+}
