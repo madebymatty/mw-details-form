@@ -11,7 +11,7 @@ This is Wordpress plugin which allows the user to update certain details and upd
 * $ composer install
 * $ gulp
 
-** Plugin Information **
+**Plugin Information**
 
 * I've added Foundation to the plugin but might be overkill for this project
 * The plugin uses Sass and Gulp to compile
@@ -19,7 +19,7 @@ This is Wordpress plugin which allows the user to update certain details and upd
 * Ive included Fontawesome within the fonts
 * A minimum amount of CSS was used as I'd expect the plugin would be styled externally to the plugin and take styling from the theme set.
 
-** Future changes if had more dev time **
+**Future changes if had more dev time**
 
 * Update submit button to match design
 * Add in some tests where I can
